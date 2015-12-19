@@ -12,14 +12,14 @@ The form is linked from the actions menu. It will be send by email to the sites 
 Features
 --------
 
-Form with the following fields:
+Form with the following fields and features:
 
 - name
 - first name
 - email
 - description of the project the account was asked form
 - human validation field
-- return to root url with a message to the users
+- return to root url with a message to the user
 - send email to site email account
 
 Examples
