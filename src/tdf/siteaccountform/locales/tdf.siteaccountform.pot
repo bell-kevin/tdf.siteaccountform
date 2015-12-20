@@ -1,0 +1,118 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-12-20 18:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tdf.siteaccountform\n"
+
+#: ../browser/accountrequestform.py:68
+msgid "Account for your Product on the LibreOffice Extension-Template-Test-Site"
+msgstr ""
+
+#: ../browser/accountrequestform.py:128
+msgid "Are you a human ?"
+msgstr ""
+
+#: ../browser/accountrequestform.py:201
+msgid "Cancel"
+msgstr ""
+
+#: ../browser/accountrequestform.py:85
+msgid "Firstname"
+msgstr ""
+
+#: ../browser/accountrequestform.py:145
+msgid "Hosting your Product(s) (Registration)"
+msgstr ""
+
+#: ../browser/accountrequestform.py:61
+msgid "Important Information:"
+msgstr ""
+
+#: ../browser/accountrequestform.py:129
+msgid "In order to avoid spam, please answer the question below."
+msgstr ""
+
+#: ../configure.zcml:21
+msgid "Installs the tdf.siteaccountform add-on."
+msgstr ""
+
+#: ../browser/accountrequestform.py:25
+msgid "Invalid email address"
+msgstr ""
+
+#: ../browser/accountrequestform.py:80
+msgid "Lastname"
+msgstr ""
+
+#: ../browser/accountrequestform.py:120
+msgid "Please keep between 50 to 1,000 characters"
+msgstr ""
+
+#: ../browser/accountrequestform.py:146
+msgid "Please leave a short description of your project below."
+msgstr ""
+
+#: ../browser/accountrequestform.py:106
+msgid "Please leave empty"
+msgstr ""
+
+#: ../browser/accountrequestform.py:90
+msgid "Please suggest your desired username. In case your preferred username is already taken, we will add numbers to your suggestion."
+msgstr ""
+
+#: ../browser/accountrequestform.py:74
+msgid "Please upload your product after you have received the credentials. Projects without files will be deleted after two weeks without further notice!"
+msgstr ""
+
+#: ../profiles/default/actions.xml
+msgid "Registration (Hosting your Product)"
+msgstr ""
+
+#: ../browser/accountrequestform.py:157
+msgid "Send"
+msgstr ""
+
+#: ../browser/accountrequestform.py:119
+msgid "Short Description of Your Project or the Reason, why You are asking for an Account"
+msgstr ""
+
+#: ../browser/accountrequestform.py:69
+msgid "Submit the form below in case you created a LibreOffice AddOn Product (extension or template) and want to publish it on this site."
+msgstr ""
+
+#: ../browser/accountrequestform.py:193
+msgid "Thank you! Your request for an account has been received and we will create an account. You will get an email with a link to activate your account and reset the password."
+msgstr ""
+
+#: ../configure.zcml:36
+msgid "Uninstalls the tdf.siteaccountform add-on."
+msgstr ""
+
+#: ../browser/accountrequestform.py:89
+msgid "User Name (5 - 15 ASCII characters)"
+msgstr ""
+
+#: ../browser/accountrequestform.py:62
+msgid "You do not need an account to download templates or extensions from this site!"
+msgstr ""
+
+#: ../browser/accountrequestform.py:99
+msgid "Your Email Address (required)"
+msgstr ""
+
+#: ../configure.zcml:21
+msgid "tdf.siteaccountform"
+msgstr ""
