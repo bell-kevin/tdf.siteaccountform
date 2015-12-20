@@ -1,0 +1,49 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="tdf.siteaccountform">
+
+  <includeDependencies package="." />
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include package=".browser" />
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="tdf.siteaccountform"
+      directory="profiles/default"
+      description="Installs the tdf.siteaccountform add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="tdf.siteaccountform-postInstall"
+      title="tdf.siteaccountform post_install import step"
+      description="Post install import step from tdf.siteaccountform"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="tdf.siteaccountform"
+      directory="profiles/uninstall"
+      description="Uninstalls the tdf.siteaccountform add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="tdf.siteaccountform-uninstall"
+      title="tdf.siteaccountform uninstall import step"
+      description="Import step run during ininstalling tdf.siteaccountform"
+      handler=".setuphandlers.uninstall">
+  </genericsetup:importStep>
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="tdf.siteaccountform-hiddenprofiles" />
+
+</configure>
