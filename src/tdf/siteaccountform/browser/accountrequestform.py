@@ -6,8 +6,6 @@ from zope.interface import Invalid
 from zope import schema
 from z3c.form import field, button, validator
 from Products.statusmessages.interfaces import IStatusMessage
-from Products.CMFCore.interfaces import ISiteRoot
-from Products.CMFCore.utils import getToolByName
 from tdf.siteaccountrequest import _
 
 
@@ -15,8 +13,6 @@ from collective.z3cform.norobots.widget import NorobotsFieldWidget
 from collective.z3cform.norobots.validator import NorobotsValidator
 
 from plone import api
-from plone.supermodel import model
-from plone.app.z3cform.layout import wrap_form
 
 
 
@@ -168,19 +164,14 @@ class SiteAccountForm(form.SchemaForm):
 
         elif 'leaveblank' in data and data['leaveblank']:
 
-            urltool = getToolByName(self.context, 'portal_url')
-
-            portal = urltool.getPortalObject()
+            portal = api.portal.get()
 
             self.request.response.redirect(portal.absolute_url())
             return
 
         else:
 
-
-            urltool = getToolByName(self.context, 'portal_url')
-
-            portal = urltool.getPortalObject()
+            portal = api.portal.get()
 
             # Construct and send a message
             source = "%s" % (data['emailAddress'])
@@ -206,8 +197,7 @@ class SiteAccountForm(form.SchemaForm):
     @button.buttonAndHandler(_(u"Cancel"))
     def cancelForm(self, action):
 
-        urltool = getToolByName(self.context, 'portal_url')
-        portal = urltool.getPortalObject()
+        portal = api.portal.get()
 
         # Redirect to the portal front page. Return an empty string as the
         # page body - we are redirecting anyway!
